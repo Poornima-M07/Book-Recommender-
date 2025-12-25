@@ -1,3 +1,4 @@
+#input
 import requests
 import random
 age = int(input("Enter age: "))
@@ -22,6 +23,8 @@ for book in response.get("works", []):
         continue
     if genre not in subjects:
         continue
+
+    #output
     
     print("\nTitle:", book.get("title", "No title"))
     authors = book.get("authors", [])
